@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="inicio">Inicio</a></li>
+                <li><a href="sobre.html" data-lang="sobremi">Sobre mí</a></li>
+                <li><a href="imagenes.html" data-lang="imagenes">Imágenes</a></li>
+                <li><a href="contacto.html" data-lang="contacto">Contacto</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button onclick="setLang('es')">ES</button>
+                <button onclick="setLang('ca')">CA</button>
+                <button onclick="setLang('en')">EN</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 data-lang="contacto">Contacto</h1>
+        <form>
+            <label for="name" data-lang="nombre">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email" data-lang="correo">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message" data-lang="mensaje">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" data-lang="enviar">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fotógrafo Deportivo</p>
+    </footer>
+</body>
+</html>
